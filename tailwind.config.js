@@ -1,0 +1,23 @@
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.tsx",
+  ],
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: "var(--font-inter)",
+        jomolhari: "var(--font-jomolhari)"
+      },
+      colors: {
+        "black": "#4A4848",
+        "white": "#FEFEFE",
+        "green-500": "#3E4841",
+        "green-whatsapp": "#25D366",
+        "beige-500": "#EEEBE6",
+        "beige-700": "#D3CAB7",
+      }
+    },
+  },
+  plugins: [],
+}
