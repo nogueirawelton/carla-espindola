@@ -1,8 +1,20 @@
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 import { ArrowRight } from "phosphor-react";
 
 export function Banner() {
+  useGSAP(() => {
+    gsap.timeline().from(".gsap-banner > *", {
+      opacity: 0,
+      y: 10,
+      duration: 1,
+      stagger: 0.5,
+      ease: "power1.inOut",
+    });
+  });
+
   return (
-    <section className="relative flex h-screen items-center">
+    <section id="inicio" className="relative flex h-screen items-center">
       <div className="absolute top-0 z-[-1] h-full w-full bg-[radial-gradient(circle,rgba(0,0,0,0.8)_0%,rgb(0,0,0)_100%)] opacity-50" />
 
       <picture>
@@ -17,7 +29,7 @@ export function Banner() {
       </picture>
 
       <div className="mx-auto w-full max-w-screen-2xl px-4 text-white md:px-8">
-        <div className="max-w-xl">
+        <div className="gsap-banner max-w-xl">
           <h1 className="font-jomolhari text-4xl leading-[50px] lg:text-6xl lg:leading-[70px]">
             Lorem Ipsum <br /> Dolor Sit Amet
           </h1>
@@ -30,7 +42,7 @@ export function Banner() {
 
           <a
             href="#contato"
-            className="mt-8 flex h-14 w-fit items-center gap-2 rounded-sm bg-green-500 px-5 font-semibold uppercase lg:h-16 lg:gap-4"
+            className="mt-8 flex h-14 w-fit items-center gap-2 rounded-sm bg-green-500 px-5 font-semibold uppercase shadow-sm lg:h-16 lg:gap-4"
           >
             Fale conosco
             <ArrowRight className="h-6 w-6 lg:h-8 lg:w-8" />

@@ -16,7 +16,24 @@ export default {
         "green-whatsapp": "#25D366",
         "beige-500": "#EEEBE6",
         "beige-700": "#D3CAB7",
-      }
+      },
+
+      keyframes: {
+        "menu": {
+          from: {
+            opacity: "0",
+            transform: "translateX(-16px)",
+          },
+          to: {
+            opacity: "1",
+            transform: "translateX(0)",
+          },
+        },
+      },
+
+      animation: {
+        "menu": "menu .6s forwards",
+      },
     },
   },
   plugins: [],
