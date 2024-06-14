@@ -1,7 +1,13 @@
 import { ArrowRight } from "phosphor-react";
 import { tv } from "tailwind-variants";
 
-export function Card() {
+interface CardProps {
+  thumb: string;
+  title: string;
+  description: string;
+}
+
+export function Card(props: CardProps) {
   const isMobile = navigator.userAgent.includes("Mobile");
 
   const card = tv({
@@ -48,15 +54,18 @@ export function Card() {
   return (
     <div className="group relative h-[320px] overflow-hidden rounded-sm md:h-[480px] lg:h-[550px]">
       <img
-        src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        alt=""
+        src={props.thumb}
+        alt={props.title}
         className="h-full w-full object-cover"
+        height={320}
+        width={425}
+        loading="lazy"
       />
 
       <div className={card({ ua: isMobile ? "mobile" : "desktop" })}>
         <div className="flex flex-col items-center">
           <strong className={title({ ua: isMobile ? "mobile" : "desktop" })}>
-            Lorem Ipsum
+            {props.title}
           </strong>
 
           <p
@@ -64,10 +73,7 @@ export function Card() {
               ua: isMobile ? "mobile" : "desktop",
             })}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sit
-            quo illum doloremque voluptatem ipsum, dolorem eveniet consequuntur
-            a eius aperiam vero alias recusandae eligendi aliquid sunt dolore
-            corporis iure.
+            {props.description}
           </p>
         </div>
 

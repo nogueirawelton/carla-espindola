@@ -17,7 +17,9 @@ export default {
         "beige-500": "#EEEBE6",
         "beige-700": "#D3CAB7",
       },
-
+      backgroundImage: {
+        "green-icon": "url(/img/icon-bg.webp)"
+      },
       keyframes: {
         "menu": {
           from: {
@@ -30,7 +32,6 @@ export default {
           },
         },
       },
-
       animation: {
         "menu": "menu .6s forwards",
       },

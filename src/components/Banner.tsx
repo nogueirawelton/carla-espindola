@@ -6,7 +6,7 @@ export function Banner() {
   useGSAP(() => {
     gsap.timeline().from(".gsap-banner > *", {
       opacity: 0,
-      y: 10,
+      y: 8,
       duration: 1,
       stagger: 0.5,
       ease: "power1.inOut",
