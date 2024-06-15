@@ -1,3 +1,5 @@
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 import { ArrowRight, CircleNotch } from "phosphor-react";
 import { ChangeEvent, FormEvent, useState } from "react";
 import { toast } from "react-toastify";
@@ -5,6 +7,27 @@ import { toast } from "react-toastify";
 export function Contact() {
   const [isLoading, setIsLoading] = useState(false);
   const [phone, setPhone] = useState("");
+
+  useGSAP(() => {
+    gsap
+      .timeline()
+      .from("#contato h2", {
+        opacity: 0,
+        y: 8,
+        duration: 1,
+        ease: "power1.inOut",
+      })
+      .from("#contato p", {
+        opacity: 0,
+        y: 8,
+        ease: "power1.inOut",
+      })
+      .from("#contato form", {
+        opacity: 0,
+        y: 8,
+        ease: "power1.inOut",
+      });
+  });
 
   async function handleSubmit(e: FormEvent) {
     e.preventDefault();
