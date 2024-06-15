@@ -15,7 +15,12 @@ export function Location() {
 
   useGSAP(() => {
     gsap
-      .timeline()
+      .timeline({
+        scrollTrigger: {
+          trigger: "#localizacao",
+          start: "top 80%",
+        },
+      })
       .from("#localizacao .left h2", {
         opacity: 0,
         x: -8,

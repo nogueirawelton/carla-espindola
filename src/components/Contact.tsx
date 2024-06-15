@@ -10,7 +10,12 @@ export function Contact() {
 
   useGSAP(() => {
     gsap
-      .timeline()
+      .timeline({
+        scrollTrigger: {
+          trigger: "#contato",
+          start: "top 80%",
+        },
+      })
       .from("#contato h2", {
         opacity: 0,
         y: 8,
