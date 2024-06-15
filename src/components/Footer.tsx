@@ -9,9 +9,9 @@ export function Footer() {
           height={71}
           className="h-[50px] w-auto lg:h-[70px]"
         />
-        <span className="text-sm text-beige-500 md:text-base">
+        {/* <span className="text-sm text-beige-500 md:text-base">
           OAB-RJ: 235.268
-        </span>
+        </span> */}
       </div>
     </footer>
   );
