@@ -6,6 +6,8 @@ import { SmootherProvider } from "./hooks/useSmoother";
 import { Benefits } from "./components/Benefits";
 import { About } from "./components/About";
 import { Location } from "./components/Location";
+import { Footer } from "./components/Footer";
+import { Contact } from "./components/Contact";
 
 export function App() {
   return (
@@ -20,6 +22,8 @@ export function App() {
             <Benefits />
             <About />
             <Location />
+            <Contact />
+            <Footer />
           </main>
         </div>
       </div>

@@ -95,7 +95,7 @@ export function Services() {
           </h2>
         </div>
 
-        <p className="desc mx-auto mt-3 max-w-2xl text-center text-green-500">
+        <p className="desc mx-auto mt-4 max-w-2xl text-center text-green-500">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
           ultricies ut neque vitae pharetra. In a lorem fringilla, porttitor
           tellus ut, iaculis nisi.
