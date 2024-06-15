@@ -70,6 +70,10 @@ export function Benefits() {
           <a
             href="#contato"
             className="mt-8 hidden h-14 w-fit items-center gap-2 rounded-sm bg-beige-500 px-5 font-semibold uppercase text-green-500 shadow-sm lg:flex lg:gap-4"
+            onClick={(e) => {
+              e.preventDefault();
+              scroll(e.currentTarget.getAttribute("href")!);
+            }}
           >
             Fale conosco
             <ArrowRight className="h-6 w-6 lg:h-8 lg:w-8" />

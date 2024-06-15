@@ -1,5 +1,6 @@
 import { ArrowRight } from "phosphor-react";
 import { tv } from "tailwind-variants";
+import { useSmoother } from "../../hooks/useSmoother";
 
 interface CardProps {
   thumb: string;
@@ -8,6 +9,8 @@ interface CardProps {
 }
 
 export function Card(props: CardProps) {
+  const { scroll } = useSmoother();
+
   const isMobile = navigator.userAgent.includes("Mobile");
 
   const card = tv({
@@ -80,6 +83,10 @@ export function Card(props: CardProps) {
         <a
           href="#contato"
           className={cta({ ua: isMobile ? "mobile" : "desktop" })}
+          onClick={(e) => {
+            e.preventDefault();
+            scroll(e.currentTarget.getAttribute("href")!);
+          }}
         >
           Saiba mais
           <ArrowRight className="h-6 w-6" />
