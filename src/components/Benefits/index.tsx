@@ -92,7 +92,10 @@ export function Benefits() {
           <a
             href="#contato"
             className="mx-auto mt-8 flex h-14 w-fit items-center gap-2 rounded-sm bg-beige-500 px-5 font-semibold uppercase text-green-500 shadow-sm lg:hidden lg:gap-4"
-            onClick={(e) => scroll(e.currentTarget.getAttribute("href")!)}
+            onClick={(e) => {
+              e.preventDefault();
+              scroll(e.currentTarget.getAttribute("href")!);
+            }}
           >
             Fale conosco
             <ArrowRight className="h-6 w-6 lg:h-8 lg:w-8" />

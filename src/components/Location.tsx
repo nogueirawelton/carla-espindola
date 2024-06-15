@@ -96,7 +96,10 @@ export function Location() {
           <a
             href="#contato"
             className="mt-8 flex h-14 w-fit items-center gap-2 rounded-sm bg-green-500 px-5 font-semibold uppercase text-beige-500 shadow-sm lg:gap-4"
-            onClick={(e) => scroll(e.currentTarget.getAttribute("href")!)}
+            onClick={(e) => {
+              e.preventDefault();
+              scroll(e.currentTarget.getAttribute("href")!);
+            }}
           >
             Fale conosco
             <ArrowRight className="h-6 w-6 lg:h-8 lg:w-8" />
