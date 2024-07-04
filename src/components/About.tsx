@@ -54,26 +54,36 @@ export function About() {
 
         <div className="right mt-8 text-green-500 lg:col-span-4 lg:col-start-9 lg:mt-0">
           <h2 className="text-left font-jomolhari text-3xl lg:text-4xl">
-            Lorem Ipsum Dolor
+            Sobre nós
           </h2>
 
           <p className="mt-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-            ultricies ut neque vitae pharetra. In a lorem fringilla, porttitor
-            tellus ut, iaculis nisi.
+            Somos um escritório de advocacia localizado no Rio de Janeiro, mais
+            precisamente em Niterói. Nosso compromisso é oferecer excelência nos
+            serviços de consultoria jurídica, representação judicial, elaboração
+            de documentos e assessoria empresarial. Contamos com uma equipe
+            especializada e estabelecemos parcerias em todo o Brasil para
+            garantir soluções eficientes e personalizadas em cada demanda.
           </p>
 
           <p className="mt-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-            ultricies ut neque vitae pharetra. In a lorem fringilla, porttitor
-            tellus ut, iaculis nisi.
+            Valorizamos profundamente estabelecer uma relação de confiança com
+            cada um dos nossos clientes, buscando compreender seus objetivos e
+            necessidades individuais. Cada caso é tratado com a máxima
+            importância e agilidade, assegurando um serviço de excelência.
           </p>
 
           <p className="mt-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-            ultricies ut neque vitae pharetra. In a lorem fringilla, porttitor
-            tellus ut, iaculis nisi.
+            Estamos à disposição para agendar uma consulta inicial, onde vamos
+            discutir como melhor atender você ou sua empresa. Descubra como
+            nossa experiência e dedicação podem fazer a diferença na resolução e
+            prevenção dos seus litígios.
           </p>
+
+          {/* <p className="mt-4">
+            Entre em contato conosco para identificarmos as suas necessidades e
+            desenvolver conclusões personalizadas para que possamos lhe ajudar.
+          </p> */}
 
           <a
             href="#contato"

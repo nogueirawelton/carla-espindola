@@ -95,13 +95,13 @@ export function Contact() {
     <section id="contato" className="bg-beige-500 py-12">
       <div className="mx-auto max-w-screen-2xl px-4 lg:px-8">
         <h2 className="text-center font-jomolhari text-3xl text-green-500 lg:text-4xl">
-          Contato
+          Formulário de contato
         </h2>
 
         <p className="desc mx-auto mt-4 max-w-2xl text-center text-green-500">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-          ultricies ut neque vitae pharetra. In a lorem fringilla, porttitor
-          tellus ut, iaculis nisi.
+          Preencha o formulário abaixo para nos enviar uma mensagem. Estamos
+          aqui para responder às suas perguntas e ajudar com suas questões
+          jurídicas.
         </p>
 
         <form className="mx-auto mt-8 max-w-screen-xl" onSubmit={handleSubmit}>

@@ -49,13 +49,14 @@ export function Location() {
       <div className="mx-auto grid w-full max-w-screen-2xl gap-8 px-4 md:px-8 lg:grid-cols-12 lg:gap-4">
         <div className="left lg:col-span-5">
           <h2 className="font-jomolhari text-3xl text-green-500 lg:text-4xl">
-            Lorem Ipsum Dolor
+            Entre em contato
           </h2>
 
           <p className="mt-4 text-green-500">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-            ultricies ut neque vitae pharetra. In a lorem fringilla, porttitor
-            tellus ut, iaculis nisi.
+            Estamos aqui para oferecer soluções jurídicas personalizadas que
+            atendem às suas necessidades específicas. Entre em contato hoje
+            mesmo e descubra como podemos ajudar você a alcançar seus objetivos
+            legais.
           </p>
 
           <div className="contact mt-8 grid gap-4 sm:grid-cols-2">

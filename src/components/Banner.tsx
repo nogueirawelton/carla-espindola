@@ -34,13 +34,13 @@ export function Banner() {
       <div className="mx-auto w-full max-w-screen-2xl px-4 text-white md:px-8">
         <div className="gsap-banner max-w-xl">
           <h1 className="font-jomolhari text-4xl leading-[50px] lg:text-6xl lg:leading-[70px]">
-            Lorem Ipsum <br /> Dolor Sit Amet
+            Excelência em <br />
+            Direito e Justiça
           </h1>
 
           <p className="mt-3">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-            ultricies ut neque vitae pharetra. In a lorem fringilla, porttitor
-            tellus ut, iaculis nisi.
+            Protegendo seus direitos com expertise e dedicação. <br /> Alcance
+            resultados concretos com nossa equipe especializada.
           </p>
 
           <a

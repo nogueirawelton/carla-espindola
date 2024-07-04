@@ -7,15 +7,15 @@ import { useSmoother } from "../../hooks/useSmoother";
 const cards = [
   {
     icon: <Medal />,
-    title: "Lorem Ipsum Dolor Sit Amet",
+    title: "Experiência Reconhecida",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies ut neque vitae pharetra. In a lorem fringilla, porttitor tellus ut, iaculis nisi.",
+      "Nossa equipe possui vasta experiência e reconhecimento na defesa dos direitos de nossos clientes. Conte com quem entende para alcançar resultados excepcionais",
   },
   {
     icon: <Scales />,
-    title: "Lorem Ipsum Dolor Sit Amet",
+    title: "Equidade e Transparência",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies ut neque vitae pharetra. In a lorem fringilla, porttitor tellus ut, iaculis nisi.",
+      "Promovemos justiça com equidade e transparência em todas as nossas intervenções legais. Protegemos seus direitos com comprometimento e integridade",
   },
 ];
 
@@ -54,17 +54,17 @@ export function Benefits() {
   });
 
   return (
-    <section id="beneficios" className="bg-green-icon py-12">
+    <section id="beneficios" className="bg-green-icon bg-cover py-12">
       <div className="mx-auto grid max-w-screen-2xl gap-8 px-4 lg:grid-cols-12 lg:gap-4 lg:px-8">
         <div className="left lg:col-span-4">
           <h2 className="text-center font-jomolhari text-3xl text-beige-500 lg:text-left lg:text-4xl">
-            Lorem Ipsum Dolor
+            Por que escolher nossos serviços jurídicos?
           </h2>
 
           <p className="mt-4 text-center text-beige-500 lg:text-left">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-            ultricies ut neque vitae pharetra. In a lorem fringilla, porttitor
-            tellus ut, iaculis nisi.
+            Nossa equipe oferece soluções personalizadas para garantir seus
+            direitos e interesses, seja em questões complexas ou situações
+            cotidianas.
           </p>
 
           <a

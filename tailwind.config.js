@@ -31,11 +31,22 @@ export default {
             transform: "translateX(0)",
           },
         },
+        "item": {
+          from: {
+            opacity: "0",
+            transform: "translate(-50%, -55%)",
+          },
+          to: {
+            opacity: "1",
+            transform: "translate(-50%,-50%)",
+          },
+        },
       },
       animation: {
         "menu": "menu .6s forwards",
+        "item": "item .6s forwards",
       },
     },
   },
-  plugins: [],
+  plugins: [require('tailwind-scrollbar')],
 }
