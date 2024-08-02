@@ -3,7 +3,8 @@ import { WhatsappLogo } from "phosphor-react";
 export function Whatsapp() {
   return (
     <a
-      href="#"
+      href="https://wa.me/+5521999397844"
+      target="_blank"
       aria-label="Entrar em contato pelo whatsapp"
       className="fixed bottom-4 right-4 grid h-14 w-14 animate-bounce place-items-center rounded-full bg-green-whatsapp lg:h-16 lg:w-16"
     >

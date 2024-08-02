@@ -14,7 +14,7 @@ export function Menu({ children }: { children: ReactNode }) {
       {
         opacity: 1,
         y: 0,
-        duration: 1,
+        duration: 0.75,
         stagger: 0.25,
         ease: "power1.inOut",
       },

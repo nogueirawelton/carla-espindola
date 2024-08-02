@@ -95,7 +95,7 @@ export function Services() {
         ease: "power1.inOut",
       })
       .from("#areas-de-atuacao .swiper-slide", {
-        duration: 1,
+        duration: 0.75,
         opacity: 0,
         y: 16,
         ease: "back.inOut",
@@ -123,8 +123,9 @@ export function Services() {
         </div>
 
         <p className="desc mx-auto mt-4 max-w-2xl text-center text-green-500">
-          Com uma equipe de advogados altamente especializados, oferecemos
-          soluções jurídicas abrangentes e personalizadas
+          Contamos com uma equipe de advogados especialistas em proporcionar
+          soluções jurídicas estratégicas que proporcionem segurança, economia e
+          satisfação aos nossos clientes.
         </p>
 
         <div className="relative mt-8 lg:mx-8 2xl:mx-0">

@@ -13,36 +13,36 @@ import { useSmoother } from "../hooks/useSmoother";
 export function Location() {
   const { scroll } = useSmoother();
 
-  useGSAP(() => {
-    gsap
-      .timeline({
-        scrollTrigger: {
-          trigger: "#localizacao",
-          start: "top 80%",
-        },
-      })
-      .from("#localizacao .left h2", {
-        opacity: 0,
-        x: -8,
-        duration: 1,
-        ease: "power1.inOut",
-      })
-      .from("#localizacao .left p", {
-        opacity: 0,
-        x: -8,
-        ease: "power1.inOut",
-      })
-      .from("#localizacao .left .contact", {
-        opacity: 0,
-        y: 8,
-        ease: "power1.inOut",
-      })
-      .from("#localizacao .left > a ", {
-        opacity: 0,
-        y: 8,
-        ease: "power1.inOut",
-      });
-  });
+  // useGSAP(() => {
+  //   gsap
+  //     .timeline({
+  //       scrollTrigger: {
+  //         trigger: "#localizacao",
+  //         start: "top 50%",
+  //       },
+  //     })
+  //     .from("#localizacao .left h2", {
+  //       opacity: 0,
+  //       x: -8,
+  //       duration: 0.75,
+  //       ease: "power1.inOut",
+  //     })
+  //     .from("#localizacao .left p", {
+  //       opacity: 0,
+  //       x: -8,
+  //       ease: "power1.inOut",
+  //     })
+  //     .from("#localizacao .left .contact", {
+  //       opacity: 0,
+  //       y: 8,
+  //       ease: "power1.inOut",
+  //     })
+  //     .from("#localizacao .left > a ", {
+  //       opacity: 0,
+  //       y: 8,
+  //       ease: "power1.inOut",
+  //     });
+  // });
 
   return (
     <section id="localizacao" className="py-12">
@@ -62,39 +62,39 @@ export function Location() {
           <div className="contact mt-8 grid gap-4 sm:grid-cols-2">
             <div>
               <a
-                href="tel:9999999999"
+                href="tel:2134924688"
                 className="flex items-center gap-2 text-green-500"
               >
                 <Phone className="h-8 w-8" />
-                <span>(99) 9999-9999</span>
+                <span>(21) 3492-4688</span>
               </a>
 
               <a
-                href="mailto:email@dominio.com.br"
+                href="mailto:carlaespindola.adv@hotmail.com"
                 className="mt-4 flex items-center gap-2 text-green-500"
               >
                 <Envelope className="h-8 w-8" />
-                <span>email@dominio.com.br</span>
+                <span>carlaespindola.adv@hotmail.com</span>
               </a>
             </div>
 
             <div>
               <a
-                href="#"
+                href="https://wa.me/+5521999397844"
                 target="_blank"
                 className="flex items-center gap-2 text-green-500"
               >
                 <WhatsappLogo className="h-8 w-8" />
-                <span>(99) 99999-9999</span>
+                <span>(21) 99939-7844</span>
               </a>
 
               <a
-                href="#"
+                href="https://www.instagram.com/carlaespindolaadvocacia"
                 target="_blank"
                 className="mt-4 flex items-center gap-2 text-green-500"
               >
                 <InstagramLogo className="h-8 w-8" />
-                <span>@instagram</span>
+                <span>@carlaespindolaadvocacia</span>
               </a>
             </div>
           </div>
@@ -116,7 +116,7 @@ export function Location() {
           <Lazy className="h-[320px] lg:h-[420px]">
             <iframe
               title="Localização"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58795.977016345045!2d-43.086505513781624!3d-22.922643131866707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9985c034c8b985%3A0x262ee793dfcc1775!2zTml0ZXLDs2ksIFJK!5e0!3m2!1spt-BR!2sbr!4v1718400267745!5m2!1spt-BR!2sbr"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.4725138772687!2d-43.0671675!3d-22.932819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x99870050a117cd%3A0xbb9d8512ea595d67!2sCarla%20Espindola%20Advocacia%20C%C3%ADvel%20e%20Empresarial!5e0!3m2!1spt-BR!2sbr!4v1722567206355!5m2!1spt-BR!2sbr"
               loading="lazy"
               className="] block h-full w-full rounded-sm border-0"
             ></iframe>

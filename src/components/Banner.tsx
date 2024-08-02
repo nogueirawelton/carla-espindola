@@ -10,7 +10,7 @@ export function Banner() {
     gsap.timeline().from(".gsap-banner > *", {
       opacity: 0,
       y: 8,
-      duration: 1,
+      duration: 0.75,
       stagger: 0.5,
       ease: "power1.inOut",
     });
@@ -32,15 +32,16 @@ export function Banner() {
       </picture>
 
       <div className="mx-auto w-full max-w-screen-2xl px-4 text-white md:px-8">
-        <div className="gsap-banner max-w-xl">
+        <div className="gsap-banner">
           <h1 className="font-jomolhari text-4xl leading-[50px] lg:text-6xl lg:leading-[70px]">
-            Excelência em <br />
-            Direito e Justiça
+            Experiência Jurídica de Excelência <br /> para Pessoas e Empresas
           </h1>
 
           <p className="mt-3">
-            Protegendo seus direitos com expertise e dedicação. <br /> Alcance
-            resultados concretos com nossa equipe especializada.
+            Consultoria jurídica personalizada, escuta ativa e soluções
+            estratégicas. <br />
+            Orientação jurídica especializada e atenta a satisfazer as
+            necessidades individuais de cada caso.
           </p>
 
           <a

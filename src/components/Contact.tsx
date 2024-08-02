@@ -8,31 +8,31 @@ export function Contact() {
   const [isLoading, setIsLoading] = useState(false);
   const [phone, setPhone] = useState("");
 
-  useGSAP(() => {
-    gsap
-      .timeline({
-        scrollTrigger: {
-          trigger: "#contato",
-          start: "top 80%",
-        },
-      })
-      .from("#contato h2", {
-        opacity: 0,
-        y: 8,
-        duration: 1,
-        ease: "power1.inOut",
-      })
-      .from("#contato p", {
-        opacity: 0,
-        y: 8,
-        ease: "power1.inOut",
-      })
-      .from("#contato form", {
-        opacity: 0,
-        y: 8,
-        ease: "power1.inOut",
-      });
-  });
+  // useGSAP(() => {
+  //   gsap
+  //     .timeline({
+  //       scrollTrigger: {
+  //         trigger: "#contato",
+  //         start: "top 50%",
+  //       },
+  //     })
+  //     .from("#contato h2", {
+  //       opacity: 0,
+  //       y: 8,
+  //       duration: 0.75,
+  //       ease: "power1.inOut",
+  //     })
+  //     .from("#contato p", {
+  //       opacity: 0,
+  //       y: 8,
+  //       ease: "power1.inOut",
+  //     })
+  //     .from("#contato form", {
+  //       opacity: 0,
+  //       y: 8,
+  //       ease: "power1.inOut",
+  //     });
+  // });
 
   async function handleSubmit(e: FormEvent) {
     e.preventDefault();
@@ -56,8 +56,8 @@ export function Contact() {
             subject: "Novo Contato!",
             referent: "Contato Site",
             recipient: {
-              name: "Weltin",
-              email: "welton.nogueira.dev@gmail.com",
+              name: "Carla Espindola",
+              email: "carlaespindola.adv@hotmail.com",
             },
             data,
           }),
@@ -99,9 +99,7 @@ export function Contact() {
         </h2>
 
         <p className="desc mx-auto mt-4 max-w-2xl text-center text-green-500">
-          Preencha o formulário abaixo para nos enviar uma mensagem. Estamos
-          aqui para responder às suas perguntas e ajudar com suas questões
-          jurídicas.
+          Preencha o formulário abaixo para nos enviar uma mensagem.
         </p>
 
         <form className="mx-auto mt-8 max-w-screen-xl" onSubmit={handleSubmit}>

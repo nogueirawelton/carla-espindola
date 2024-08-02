@@ -1,6 +1,6 @@
 export function Footer() {
   return (
-    <footer className="h-28 bg-green-icon">
+    <footer className="h-28 bg-green-icon bg-cover">
       <div className="mx-auto flex h-full max-w-screen-2xl flex-col items-center justify-center px-4 md:flex-row md:justify-between md:px-24 2xl:px-0">
         <img
           src="/img/logo-alt.svg"

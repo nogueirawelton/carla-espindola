@@ -27,13 +27,13 @@ export function Benefits() {
       .timeline({
         scrollTrigger: {
           trigger: "#beneficios",
-          start: "top 80%",
+          start: "top 50%",
         },
       })
       .from("#beneficios .left h2", {
         opacity: 0,
         x: -8,
-        duration: 1,
+        duration: 0.75,
         ease: "power1.inOut",
       })
       .from("#beneficios .left p", {
@@ -62,9 +62,9 @@ export function Benefits() {
           </h2>
 
           <p className="mt-4 text-center text-beige-500 lg:text-left">
-            Nossa equipe oferece soluções personalizadas para garantir seus
-            direitos e interesses, seja em questões complexas ou situações
-            cotidianas.
+            Nossa equipe oferece soluções personalizadas construídas
+            artesanalmente atendendo as necessidades dos nossos clientes. Entre
+            em contato e descubra uma nova experiência jurídica.
           </p>
 
           <a

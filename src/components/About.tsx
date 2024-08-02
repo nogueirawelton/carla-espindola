@@ -11,7 +11,7 @@ export function About() {
       .timeline({
         scrollTrigger: {
           trigger: "#sobre",
-          start: "top 80%",
+          start: "top 50%",
         },
       })
       .from("#sobre .left", {
