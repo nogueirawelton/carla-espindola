@@ -6,8 +6,8 @@ import {
   WhatsappLogo,
 } from "phosphor-react";
 import { Lazy } from "./Lazy";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
+// import { useGSAP } from "@gsap/react";
+// import gsap from "gsap";
 import { useSmoother } from "../hooks/useSmoother";
 
 export function Location() {

@@ -1,5 +1,5 @@
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
+// import { useGSAP } from "@gsap/react";
+// import gsap from "gsap";
 import { ArrowRight, CircleNotch } from "phosphor-react";
 import { ChangeEvent, FormEvent, useState } from "react";
 import { toast } from "react-toastify";
